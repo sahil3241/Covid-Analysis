@@ -21,10 +21,17 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-top: 0px; padding-bottom: 0px;">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-lg-0 ml-auto" style="padding-left: 1050px; gap: 2rem;">
+        <ul class="navbar-nav mb-lg-0 ml-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              Cases
+              Home
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-lg-0 ml-auto" style="padding-left: 960px; gap: 2rem;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              Testing
             </a>
           </li>
           <li class="nav-item">
@@ -44,7 +51,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              Data
+              Statistics
             </a>
           </li>
         </ul>
@@ -63,6 +70,8 @@
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" id="first">First Doses Administered</a></li>
           <li><a class="dropdown-item" id="second">Second Doses Administered</a></li>
+          <li><a class="dropdown-item" id="male">Male Doses Administered</a></li>
+          <li><a class="dropdown-item" id="female">Female Doses Administered</a></li>
         </ul>
       </div>
 
@@ -76,6 +85,8 @@
     <script>
         const image1Url = "{{ image1 }}";
         const image2Url = "{{ image2 }}";
+        const image3Url = "{{ image3 }}";
+        const image4Url = "{{ image4 }}";
     </script>
     <script src="https://kit.fontawesome.com/6eb066ffa6.js" crossorigin="anonymous"></script>
 </body>
