@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 India</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .container {
+          max-width: 800px;
+          margin: auto;
+          padding: 0 15px;
+        }
+        h2 {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          font-size: 1.8rem;
+        }
+        p {
+          margin-bottom: 15px;
+        }
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+        }
+        li {
+          margin-bottom: 5px;
+        }
+        .footer {
+          background-color: #343a40;
+          color: #fff;
+          padding: 10px 0;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+      </style>
+    
+</head>
+<body>
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="navbar-brand"><i class="fa-solid fa-database"></i>   Covid-19 India Dashboard</li>
+      </ul>
+      <ul class="navbar-nav mb-lg-0">
+        <li class="navbar-brand" href="/adminLogin"><a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-right-to-bracket"></i> Admin</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-top: 0px; padding-bottom: 0px;">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-lg-0 ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">
+              Home
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-lg-0 ml-auto" style="padding-left: 960px; gap: 2rem;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/deaths">
+              Deaths
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/vaccines">
+              Vaccines
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/statistics">
+              Statistics
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr style="margin-top: 3px; margin-bottom: 0px;  border: transparent;">
+
+  <section class="container mt-5">
+    <h2>Features Available</h2>
+    <ul>
+        <li>Interactive Data Visualization</li>
+        <li>State-wise Data</li>
+    </ul>
+  </section>
+  
+
+
+  <section class="container mt-5">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="https://main.mohfw.gov.in/" style="text-decoration: none;">Government Health Website</a></li>
+      <li><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" style="text-decoration: none;">Covid-19 Helpline Numbers</a></li>
+      <li><a href="https://services.india.gov.in/service/detail/check-your-nearest-vaccination-center-and-slots-availability-1" style="text-decoration: none;">Testing Centers</a></li>
+      <li><a href="https://www.mohfw.gov.in/pdf/UpdatedDetailedClinicalManagementProtocolforCOVID19adultsdated24052021.pdf" style="text-decoration: none;">Guidelines and Protocols</a></li>
+    </ul>
+  </section>
+
+  <section class="container mt-4">
+    <h2>FAQs</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne" style="margin-top: 0px;">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+            What is Covid-19?
+          </button>
+        </h2>
+        <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p>Covid-19 is a contagious respiratory illness caused by the coronavirus SARS-CoV-2. It was first identified in December 2019 in Wuhan, China.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+            What are the symptoms of Covid-19?
+          </button>
+        </h2>
+        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p>Common symptoms of Covid-19 include fever, cough, shortness of breath, fatigue, muscle or body aches, headache, new loss of taste or smell, sore throat, congestion or runny nose, nausea or vomiting, and diarrhea.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+            How does Covid-19 spread?
+          </button>
+        </h2>
+        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p>Covid-19 primarily spreads through respiratory droplets when an infected person talks, coughs, or sneezes. It can also spread by touching surfaces contaminated with the virus and then touching the face.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+            How can I protect myself from Covid-19?
+          </button>
+        </h2>
+        <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p>To protect yourself from Covid-19, it's important to practice good hygiene, wear a mask in public settings, maintain physical distance from others, avoid crowded places, and get vaccinated when eligible.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more FAQ items as needed -->
+    </div>
+  </section>
+
+
+  
+
+  <section class="container mt-5">
+    <h2>Data Sources and Methodology</h2>
+    <p><strong>Note:</strong> The data provided on this dashboard is historical data meant for research purposes only. It provides data up to August 9, 2021.</p>
+  </section>
+
+
+  <section class="container mt-5">
+    <h2>Emergency Contact Information</h2>
+    <p>For medical assistance or emergencies related to Covid-19, please contact the following:</p>
+    <ul>
+      <li>Emergency Medical Services: 102</li>
+      <li>Covid-19 Helpline: 1800-123-4567</li>
+    </ul>
+  </section>
+
+
+
+<section class="container mt-5">
+    <h2>Feedback</h2>
+    <p>We value your feedback! If you have any suggestions or encounter any issues with our dashboard, please <a href="mailto:sahil06202@gmail.com" style="text-decoration: none;">contact us</a>.</p>
+</section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2021 Covid-19 India Dashboard
+  </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <script src="https://kit.fontawesome.com/6eb066ffa6.js" crossorigin="anonymous"></script>
+</body>
+</html>

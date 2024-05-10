@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 India</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 50px;
+          padding-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        p {
+
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="navbar-brand" href="#"><i class="fa-solid fa-database"></i>   Covid-19 India Dashboard</li>
+      </ul>
+      <ul class="navbar-nav mb-lg-0">
+        <li class="navbar-brand" href="#"><a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-right-to-bracket"></i> Admin</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-top: 0px; padding-bottom: 0px;">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-lg-0 ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">
+              Home
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-lg-0 ml-auto" style="padding-left: 960px; gap: 2rem;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/deaths">
+              Deaths
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/vaccines">
+              Vaccines
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/statistics">
+              Statistics
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr style="margin-top: 3px; margin-bottom: 0px;  border: transparent;">
+
+  <div class="container" style="display: flex; justify-content: center; align-items: center; padding-top: 50px; padding-bottom: 30px;">
+    <table>
+        <tr>
+            <th>State</th>
+            <th>Covaxin (Doses Administered)</th>
+            <th>CoviShield (Doses Administered)</th>
+            <th>Sputnik V (Doses Administered)</th>
+        </tr>
+        <tr>
+            <td>Andaman and Nicobar Islands</td>
+            <td>0.0</td>
+            <td>20,511,430</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Andhra Pradesh</td>
+            <td>263,695,249</td>
+            <td>1,323,987,000</td>
+            <td>1,412,491</td>
+        </tr>
+        <tr>
+            <td>Arunachal Pradesh</td>
+            <td>1,820</td>
+            <td>60,800,520</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Assam</td>
+            <td>118,720,291</td>
+            <td>597,082,300</td>
+            <td>37,342</td>
+        </tr>
+        <tr>
+            <td>Bihar</td>
+            <td>156,807,520</td>
+            <td>1,582,600,000</td>
+            <td>61,096</td>
+        </tr>
+        <tr>
+            <td>Chandigarh</td>
+            <td>117,678</td>
+            <td>56,145,300</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Chhattisgarh</td>
+            <td>57,309,565</td>
+            <td>909,554,300</td>
+            <td>108,656</td>
+        </tr>
+        <tr>
+            <td>Dadra and Nagar Haveli and Daman and Diu</td>
+            <td>1,072</td>
+            <td>38,172,820</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Delhi</td>
+            <td>218,692,040</td>
+            <td>592,068,900</td>
+            <td>1,017,693</td>
+        </tr>
+        <tr>
+            <td>Goa</td>
+            <td>1,469,705</td>
+            <td>90,655,060</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Gujarat</td>
+            <td>307,771,021</td>
+            <td>2,420,791,000</td>
+            <td>262,837</td>
+        </tr>
+        <tr>
+            <td>Haryana</td>
+            <td>129,521,424</td>
+            <td>782,914,000</td>
+            <td>1,001,912</td>
+        </tr>
+        <tr>
+            <td>Himachal Pradesh</td>
+            <td>106,196</td>
+            <td>389,422,900</td>
+            <td>140,518</td>
+        </tr>
+        <tr>
+            <td>Jammu and Kashmir</td>
+            <td>10,689,044</td>
+            <td>485,074,900</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Jharkhand</td>
+            <td>101,754,584</td>
+            <td>623,347,100</td>
+            <td>100,747</td>
+        </tr>
+        <tr>
+            <td>Karnataka</td>
+            <td>260,352,181</td>
+            <td>2,035,228,000</td>
+            <td>1,186,887</td>
+        </tr>
+        <tr>
+            <td>Kerala</td>
+            <td>121,110,027</td>
+            <td>1,434,198,000</td>
+            <td>582,603</td>
+        </tr>
+        <tr>
+            <td>Ladakh</td>
+            <td>910</td>
+            <td>23,240,760</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Lakshadweep</td>
+            <td>75</td>
+            <td>5,417,951</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Madhya Pradesh</td>
+            <td>242,969,922</td>
+            <td>1,867,868,000</td>
+            <td>253,360</td>
+        </tr>
+        <tr>
+            <td>Maharashtra</td>
+            <td>407,481,575</td>
+            <td>3,084,928,000</td>
+            <td>2,013,538</td>
+        </tr>
+        <tr>
+            <td>Manipur</td>
+            <td>743</td>
+            <td>79,216,640</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Meghalaya</td>
+            <td>2,275</td>
+            <td>74,712,550</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Mizoram</td>
+            <td>137</td>
+            <td>57,761,790</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Nagaland</td>
+            <td>3,736</td>
+            <td>51,477,500</td>
+            <td>42,995</td>
+        </tr>
+        <tr>
+            <td>Odisha</td>
+            <td>144,665,930</td>
+            <td>1,136,848,000</td>
+            <td>88,324</td>
+        </tr>
+        <tr>
+            <td>Puducherry</td>
+            <td>10,324</td>
+            <td>49,919,500</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Punjab</td>
+            <td>73,123,941</td>
+            <td>631,604,400</td>
+            <td>172,288</td>
+        </tr>
+        <tr>
+            <td>Rajasthan</td>
+            <td>246,809,265</td>
+            <td>2,442,166,000</td>
+            <td>228,872</td>
+        </tr>
+        <tr>
+            <td>Sikkim</td>
+            <td>3,239</td>
+            <td>46,663,770</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Tamil Nadu</td>
+            <td>240,280,582</td>
+            <td>1,337,449,000</td>
+            <td>775,724</td>
+        </tr>
+        <tr>
+            <td>Telangana</td>
+            <td>191,325,530</td>
+            <td>881,185,400</td>
+            <td>3,601,207</td>
+        </tr>
+        <tr>
+            <td>Tripura</td>
+            <td>2,928,848</td>
+            <td>254,641,200</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Uttar Pradesh</td>
+            <td>381,441,691</td>
+            <td>2,955,199,000</td>
+            <td>369,784</td>
+        </tr>
+        <tr>
+            <td>Uttarakhand</td>
+            <td>21,899,227</td>
+            <td>440,878,700</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>West Bengal</td>
+            <td>279,383,416</td>
+            <td>2,099,640,000</td>
+            <td>1,000,343</td>
+        </tr>
+    </table>
+    
+
+  </div>
+    <p><b>Note:</b>This dataset provides information about the total number of vaccine doses administered by state in India for different COVID-19 vaccines.</p>
+      
+      <footer class="bg-dark text-white text-center py-3">
+          &copy; 2021 Covid-19 India Dashboard
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <script src="https://kit.fontawesome.com/6eb066ffa6.js" crossorigin="anonymous"></script>
+</body>
+</html>
